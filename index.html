@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGLA Restaurant | Zelenika, Herceg-Novi</title>
+    <meta name="description" content="Restoran MAGLA u Zelenici, Herceg-Novi, Crna Gora. Tradicionalna i internacionalna kuhinja, nargila. Radimo svaki dan od 12:00 do 24:00.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="module" crossorigin src="./assets/index-BliLpXCN.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Dj7uJyqC.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVIGACIJA ===== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="header__logo">
+                <img src="./assets/Logo2-VUF0zU2B.png" alt="MAGLA" class="header__logo-img">
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#hero" class="nav__link">Početna</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">O nama</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">Meni</a></li>
+                    <li class="nav__item"><a href="#reviews" class="nav__link">Utisci</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Kontakt</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger" aria-label="Otvori meni">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO SEKCIJA ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__vignette"></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+            <h1 class="hero__title">MAGLA</h1>
+            <p class="hero__subtitle">Restaurant & Hookah</p>
+            <div class="hero__divider"></div>
+            <p class="hero__hours">
+                <i class="far fa-clock"></i> 12:00 — 24:00
+                <span class="hero__kitchen">Kuhinja do 23:00</span>
+            </p>
+            <a href="#menu" class="btn btn--primary">Naš meni</a>
+        </div>
+    </section>
+
+    <!-- ===== O NAMA ===== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__content">
+                    <h2 class="about__title">MAGLA</h2>
+                    <p class="about__tagline">Restaurant & Hookah</p>
+                    <p class="about__text">
+                        Dobrodošli u <strong>MAGLU</strong> — mjesto gdje se susreću tradicionalni
+                        balkanski okusi i moderna kuhinja. Smješteni u <strong>Zelenici</strong>,
+                        Herceg-Novi, trudimo se da svaki gost kod nas osjeti pravu gostoljubivost.
+                    </p>
+                    <p class="about__text">
+                        Naša kuhinja priprema jela od svježih namirnica, a posebno smo ponosni
+                        na naš izbor <strong>nargile</strong> — savršen dodatak večeri uz dobro
+                        društvo.
+                    </p>
+                </div>
+                <div class="about__image">
+                    <div class="about__image-frame">
+                        <img src="./assets/ph1-DumPV1E6.png" alt="MAGLA" class="about__image-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MENI ===== -->
+    <section class="menu section" id="menu">
+        <div class="container">
+            <h2 class="section__title">Naš meni</h2>
+            <p class="section__subtitle">Jela pripremljena s ljubavlju</p>
+
+            <!-- Filter buttons -->
+            <div class="menu__filters" id="menuFilters">
+                <button class="menu__filter active" data-category="rostilj">Roštilj na žaru</button>
+                <button class="menu__filter" data-category="predjela">Predjela</button>
+                <button class="menu__filter" data-category="salate">Salate</button>
+                <button class="menu__filter" data-category="corbe">Čorbe & Supe</button>
+                <button class="menu__filter" data-category="glavna">Glavna jela</button>
+                <button class="menu__filter" data-category="paste">Paste</button>
+                <button class="menu__filter" data-category="rizotto">Rižotto</button>
+                <button class="menu__filter" data-category="pizza">Pizza</button>
+                <button class="menu__filter" data-category="pice">Piće</button>
+                <button class="menu__filter" data-category="nargila">Nargila</button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu__grid" id="menuGrid">
+
+                <!-- ===== ROŠTILJ NA ŽARU ===== -->
+                <div class="menu__item" data-category="rostilj">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Piletina Na Ražnju Sa Roštilja</h3>
+                        <span class="menu__item-weight">500g</span>
+                    </div>
+                    <p class="menu__item-desc">Batak / File od piletine 270g, povrće 100g, pomfrit 100g</p>
+                    <span class="menu__item-price">€11.50</span>
+                </div>
+
+                <div class="menu__item" data-category="rostilj">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Brancin na ćumur</h3>
+                        <span class="menu__item-weight">300g</span>
+                    </div>
+                    <p class="menu__item-desc">Brancin, mladi krompir, zelena salata, limun, kopar, ćeri paradajz, sos.</p>
+                    <span class="menu__item-price">€16.00</span>
+                </div>
+
+                <div class="menu__item" data-category="rostilj">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Orada na ćumur</h3>
+                        <span class="menu__item-weight">300g</span>
+                    </div>
+                    <p class="menu__item-desc">Orada, mladi krompir, zelena salata, limun, kopar, ćeri paradajz, sos.</p>
+                    <span class="menu__item-price">€16.00</span>
+                </div>
+
+                <div class="menu__item" data-category="rostilj">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pileći kebab sa roštilja</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Mljeveno pileće meso, crni luk, zeleni luk, sos.</p>
+                    <span class="menu__item-price">€14.50</span>
+                </div>
+
+                <div class="menu__item" data-category="rostilj">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Kobasice sa roštilja</h3>
+                        <span class="menu__item-weight">400g</span>
+                    </div>
+                    <p class="menu__item-desc">Jagnjeće kobasice, pomfrit, zelena salata, paradajz sos</p>
+                    <span class="menu__item-price">€9.50</span>
+                </div>
+
+                <!-- ===== PREDJELA ===== -->
+                <div class="menu__item" data-category="predjela">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Čeburek sa svinjetinom</h3>
+                        <span class="menu__item-weight">200g</span>
+                    </div>
+                    <p class="menu__item-desc">Testo, mlevena svinjetina</p>
+                    <span class="menu__item-price">€7.00</span>
+                </div>
+
+                <div class="menu__item" data-category="predjela">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Ćeburek sa krompirom i pečurkama</h3>
+                        <span class="menu__item-weight">200g</span>
+                    </div>
+                    <p class="menu__item-desc">Prženo tijesto punjeno pire krompirom i gljivama</p>
+                    <span class="menu__item-price">€7.00</span>
+                </div>
+
+                <div class="menu__item" data-category="predjela">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Ćeburek sa piletinom i paprikom</h3>
+                        <span class="menu__item-weight">200g</span>
+                    </div>
+                    <p class="menu__item-desc">Prženo testo punjeno piletinom i paprikom</p>
+                    <span class="menu__item-price">€7.00</span>
+                </div>
+
+                <!-- ===== SALATE ===== -->
+                <div class="menu__item" data-category="salate">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Biftek salata</h3>
+                        <span class="menu__item-weight">330g</span>
+                    </div>
+                    <p class="menu__item-desc">Ajsberg salata, goveđa pečenica, crvena paprika, čeri paradajz, medeno-senfni sos, devičansko maslinovo ulje</p>
+                    <span class="menu__item-price">€14.50</span>
+                </div>
+
+                <div class="menu__item" data-category="salate">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Cezar salata sa škampima</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Ajsberg salata, škampi, krutoni, čeri paradajz, parmezan, Cezar sos</p>
+                    <span class="menu__item-price">€14.00</span>
+                </div>
+
+                <div class="menu__item" data-category="salate">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Tuna salata</h3>
+                        <span class="menu__item-weight">330g</span>
+                    </div>
+                    <p class="menu__item-desc">Tuna, ajsberg salata, crvena paprika, čeri paradajz, rukola, limun preliv, devičansko maslinovo ulje</p>
+                    <span class="menu__item-price">€12.00</span>
+                </div>
+
+                <div class="menu__item" data-category="salate">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Cezar salata sa piletinom</h3>
+                        <span class="menu__item-weight">330g</span>
+                    </div>
+                    <p class="menu__item-desc">Ajsberg salata, piletina, krutoni, čeri paradajz, parmezan, Cezar sos</p>
+                    <span class="menu__item-price">€11.00</span>
+                </div>
+
+                <div class="menu__item" data-category="salate">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Šopska salata</h3>
+                        <span class="menu__item-weight">200g</span>
+                    </div>
+                    <p class="menu__item-desc">Paradajz, krastavac, crni luk, sir, devičansko maslinovo ulje</p>
+                    <span class="menu__item-price">€6.50</span>
+                </div>
+
+                <!-- ===== ČORBE I SUPE ===== -->
+                <div class="menu__item" data-category="corbe">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Čorba Soljanka</h3>
+                        <span class="menu__item-weight">400g</span>
+                    </div>
+                    <p class="menu__item-desc">Mešano meso, luk, kiseli krastavac, paradajz, pasta, masline, limun</p>
+                    <span class="menu__item-price">€7.50</span>
+                </div>
+
+                <div class="menu__item" data-category="corbe">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Čorba Okroška sa kvasom</h3>
+                        <span class="menu__item-weight">400g</span>
+                    </div>
+                    <p class="menu__item-desc">Šunka, krompir, rotkvica, krastavac, jaje, kvas, pavlaka, senf, majonez, mirodjija</p>
+                    <span class="menu__item-price">€7.50</span>
+                </div>
+
+                <div class="menu__item" data-category="corbe">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Čorba Boršč</h3>
+                        <span class="menu__item-weight">400g</span>
+                    </div>
+                    <p class="menu__item-desc">Govedina, kupus, cvekla, krompir, šargarepa, luk, začin</p>
+                    <span class="menu__item-price">€7.50</span>
+                </div>
+
+                <div class="menu__item" data-category="corbe">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Okroška na kefire</h3>
+                        <span class="menu__item-weight">400g</span>
+                    </div>
+                    <p class="menu__item-desc">Šunka, krompir, rotkvica, krastavac, jaja, kefir, mirodjija, senf</p>
+                    <span class="menu__item-price">€6.50</span>
+                </div>
+
+                <!-- ===== GLAVNA JELA ===== -->
+                <div class="menu__item" data-category="glavna">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Juneći biftek sa sosom BBQ i mladim krompirom</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Goveđi kare, mladi krompir, paprika, zelena salata, prženi beli luk, čili paprika, začini, BBQ sos</p>
+                    <span class="menu__item-price">€22.50</span>
+                </div>
+
+                <div class="menu__item" data-category="glavna">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Languštine 5 komada</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Langoštine, beli luk, rukola, limun, sos</p>
+                    <span class="menu__item-price">€19.50</span>
+                </div>
+
+                <div class="menu__item" data-category="glavna">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Losos stejk</h3>
+                        <span class="menu__item-weight">—</span>
+                    </div>
+                    <p class="menu__item-desc">Svježi losos, limun, praziluk, sos</p>
+                    <span class="menu__item-price">€18.50</span>
+                </div>
+
+                <div class="menu__item" data-category="glavna">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Kramenadla šnicla</h3>
+                        <span class="menu__item-weight">500g</span>
+                    </div>
+                    <p class="menu__item-desc">Svinjska laks kare, pomfrit, crni luk, zelena salata, mirođija, paradajz sos.</p>
+                    <span class="menu__item-price">€13.50</span>
+                </div>
+
+                <div class="menu__item" data-category="glavna">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pilav iz kazana</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Govedina, beli luk, začini, šargarepa, crni luk, povrće</p>
+                    <span class="menu__item-price">€9.50</span>
+                </div>
+
+                <div class="menu__item" data-category="glavna">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Ćevapi</h3>
+                        <span class="menu__item-weight">250g</span>
+                    </div>
+                    <p class="menu__item-desc">Goveđe meso, crni luk, paradajz, krastavac, sos.</p>
+                    <span class="menu__item-price">€9.00</span>
+                </div>
+
+                <!-- ===== PASTE ===== -->
+                <div class="menu__item" data-category="paste">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pasta sa morskim plodovima</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Špagete, morski plodovi, pavlaka za kuvanje, devičansko maslinovo ulje, crni luk, beli luk, čeri paradajz, limun, luk porej, parmezan</p>
+                    <span class="menu__item-price">€14.00</span>
+                </div>
+
+                <div class="menu__item" data-category="paste">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pasta sa piletinom i pečurkama</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Špagete, piletina, pečurke, pavlaka za kuvanje, začin, devičansko maslinovo ulje, crni luk, čeri paradajz, luk porej, parmezan</p>
+                    <span class="menu__item-price">€14.00</span>
+                </div>
+
+                <div class="menu__item" data-category="paste">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pasta Bolonjeze</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Goveđe mleveno meso, špagete, paradajz ragu, devičansko maslinovo ulje, crni luk, beli luk, začini Provansa, čeri paradajz, bosiljak, parmezan</p>
+                    <span class="menu__item-price">€13.50</span>
+                </div>
+
+                <div class="menu__item" data-category="paste">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pasta Carbonara</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Penne, panceta, šunka, devičansko maslinovo ulje, jaja, beli luk, čeri paradajz, bosiljak, parmezan</p>
+                    <span class="menu__item-price">€13.50</span>
+                </div>
+
+                <div class="menu__item" data-category="paste">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Vegetarijanska pasta</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Pappardelle, pesto, tikvice, svež paradajz, devičansko maslinovo ulje, pavlaka za kuvanje, čeri paradajz, bosiljak, parmezan</p>
+                    <span class="menu__item-price">€12.00</span>
+                </div>
+
+                <!-- ===== RIŽOTTO ===== -->
+                <div class="menu__item" data-category="rizotto">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Rižotto sa piletinom i pečurkama</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Pirinač, piletina, pečurke, pavlaka za kuvanje, začin, kačkavalj</p>
+                    <span class="menu__item-price">€13.00</span>
+                </div>
+
+                <div class="menu__item" data-category="rizotto">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Rižotto sa morskim plodovima</h3>
+                        <span class="menu__item-weight">350g</span>
+                    </div>
+                    <p class="menu__item-desc">Pirinač, morski plodovi, začin, limun, pavlaka za kuvanje, kačkavalj</p>
+                    <span class="menu__item-price">€13.00</span>
+                </div>
+
+                <!-- ===== PIZZA ===== -->
+                <div class="menu__item" data-category="pizza">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pizza Capricciosa</h3>
+                        <span class="menu__item-weight">600g</span>
+                    </div>
+                    <p class="menu__item-desc">Mocarela, šunka, pečurke, paradajz, masline</p>
+                    <span class="menu__item-price">€13.00</span>
+                </div>
+
+                <div class="menu__item" data-category="pizza">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pizza Pepperoni</h3>
+                        <span class="menu__item-weight">600g</span>
+                    </div>
+                    <p class="menu__item-desc">Mozzarella sir, pasta paradajza, bijeli luk, kobasice, salama, bosiljak</p>
+                    <span class="menu__item-price">€13.00</span>
+                </div>
+
+                <div class="menu__item" data-category="pizza">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pizza BBQ Piletina</h3>
+                        <span class="menu__item-weight">600g</span>
+                    </div>
+                    <p class="menu__item-desc">Mozzarella sir, piletina, paradajz, kiseli krastavac, pečurke, BBQ sos, luk</p>
+                    <span class="menu__item-price">€12.00</span>
+                </div>
+
+                <div class="menu__item" data-category="pizza">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pizza Margarita</h3>
+                        <span class="menu__item-weight">600g</span>
+                    </div>
+                    <p class="menu__item-desc">Mozzarella sir, pasta paradajza, bijeli luk, bosiljak, masline, paradajz</p>
+                    <span class="menu__item-price">€11.00</span>
+                </div>
+
+                <div class="menu__item" data-category="pizza">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">1/4 Pizza Slice</h3>
+                        <span class="menu__item-weight">150g</span>
+                    </div>
+                    <p class="menu__item-desc">A slice of any pizza</p>
+                    <span class="menu__item-price">€3.25</span>
+                </div>
+
+                <!-- ===== PIĆE ===== -->
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Paulaner Weissbier Pivo 5,5%</h3>
+                        <span class="menu__item-weight">0,5l</span>
+                    </div>
+                    <p class="menu__item-desc">Pivo lager u limenci</p>
+                    <span class="menu__item-price">€3.50</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Holsten Pivo 4,2%</h3>
+                        <span class="menu__item-weight">0,5l</span>
+                    </div>
+                    <p class="menu__item-desc">Holsten Brauerei lager u limenci</p>
+                    <span class="menu__item-price">€2.99</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Heineken Pivo 4,8%</h3>
+                        <span class="menu__item-weight">0,25l</span>
+                    </div>
+                    <p class="menu__item-desc">Pivo u staklu</p>
+                    <span class="menu__item-price">€2.99</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Nikšičko Nefiltrirano Pivo 5,4%</h3>
+                        <span class="menu__item-weight">0,5l</span>
+                    </div>
+                    <p class="menu__item-desc">Pivo lager u limenci</p>
+                    <span class="menu__item-price">€2.99</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Pepsi</h3>
+                        <span class="menu__item-weight">0,33l</span>
+                    </div>
+                    <p class="menu__item-desc">Pepsi</p>
+                    <span class="menu__item-price">€2.50</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">7UP Lim</h3>
+                        <span class="menu__item-weight">0,33l</span>
+                    </div>
+                    <p class="menu__item-desc">Gazirana limonada</p>
+                    <span class="menu__item-price">€2.50</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Schweppes</h3>
+                        <span class="menu__item-weight">0,33l</span>
+                    </div>
+                    <p class="menu__item-desc">Tonic</p>
+                    <span class="menu__item-price">€2.50</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Cockta Original</h3>
+                        <span class="menu__item-weight">0,33l</span>
+                    </div>
+                    <p class="menu__item-desc">Fresh drink lemonade</p>
+                    <span class="menu__item-price">€2.50</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Ivi Breskva</h3>
+                        <span class="menu__item-weight">0,33l</span>
+                    </div>
+                    <p class="menu__item-desc">Gazirani sok</p>
+                    <span class="menu__item-price">€2.50</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Knjaz Miloš</h3>
+                        <span class="menu__item-weight">0,25l</span>
+                    </div>
+                    <p class="menu__item-desc">Staklena boca</p>
+                    <span class="menu__item-price">€2.00</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Sok ANANAS</h3>
+                        <span class="menu__item-weight">0,2l</span>
+                    </div>
+                    <p class="menu__item-desc">Gusto sok u staklu</p>
+                    <span class="menu__item-price">€3.50</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Sok JAGODA</h3>
+                        <span class="menu__item-weight">0,2l</span>
+                    </div>
+                    <p class="menu__item-desc">Gusto sok u staklu</p>
+                    <span class="menu__item-price">€3.50</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Sok JABUKA</h3>
+                        <span class="menu__item-weight">0,2l</span>
+                    </div>
+                    <p class="menu__item-desc">Gusto sok u staklu</p>
+                    <span class="menu__item-price">€3.50</span>
+                </div>
+
+                <div class="menu__item" data-category="pice">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Sok NARANDŽA</h3>
+                        <span class="menu__item-weight">0,2l</span>
+                    </div>
+                    <p class="menu__item-desc">Gusto sok u staklu</p>
+                    <span class="menu__item-price">€3.50</span>
+                </div>
+
+                <!-- ===== NARGILA ===== -->
+                <div class="menu__item" data-category="nargila">
+                    <div class="menu__item-header">
+                        <h3 class="menu__item-title">Nargila / Hookah</h3>
+                        <span class="menu__item-weight">—</span>
+                    </div>
+                    <p class="menu__item-desc">Širok izbor vrhunskih aroma. Savršen dodatak vašem odmoru.</p>
+                    <span class="menu__item-price">—</span>
+                </div>
+
+            </div><!-- /menu__grid -->
+        </div>
+    </section>
+
+
+    <!-- ===== RECENZIJE / UTISCI ===== -->
+    <section class="reviews section" id="reviews">
+        <div class="container">
+            <h2 class="section__title">Utisci gostiju</h2>
+            <p class="section__subtitle">Šta kažu o nama</p>
+
+            <!-- Google Rating -->
+            <div class="reviews__rating">
+                <span class="reviews__rating-value">4.5</span>
+                <div class="reviews__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.google.com/maps/place/MAGLA/@42.4518022,18.570001,323m/data=!3m1!1e3!4m6!3m5!1s0x134c3b0052ed09f9:0x4c6150318e19eb31!8m2!3d42.4516566!4d18.5720051!16s%2Fg%2F11x01kc_wc?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D"
+                   target="_blank" rel="noopener noreferrer" class="reviews__rating-link">
+                    <i class="fab fa-google"></i>
+                </a>
+            </div>
+
+            <div class="reviews__grid">
+
+                <!-- Review 1 -->
+                <div class="review__card">
+                    <div class="review__header">
+                        <div class="review__avatar">N</div>
+                        <div class="review__meta">
+                            <span class="review__name">Natalya</span>
+                            <div class="reviews__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <i class="fab fa-google review__source"></i>
+                    </div>
+                    <p class="review__text">
+                        Odličan restoran. Cezar salata nije s majonezom, kao u većini restorana. Jako ukusna hrana i prijatna atmosfera. Soljanka je veličanstvena. Ljubazno osoblje, govore ruski. Šik nargila, što je takođe rijetkost.
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review__card">
+                    <div class="review__header">
+                        <div class="review__avatar">P</div>
+                        <div class="review__meta">
+                            <span class="review__name">Pavel</span>
+                            <div class="reviews__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <i class="fab fa-google review__source"></i>
+                    </div>
+                    <p class="review__text">
+                        Nice simple food. Good hookah tobaccos.
+                    </p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review__card">
+                    <div class="review__header">
+                        <div class="review__avatar">A</div>
+                        <div class="review__meta">
+                            <span class="review__name">Alena</span>
+                            <div class="reviews__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <i class="fab fa-google review__source"></i>
+                    </div>
+                    <p class="review__text">
+                        Poručili smo MAGLA burger i ribu sa roštilja — sve je bilo prefino. Nargila odlična, cijena 25€.
+                    </p>
+                </div>
+
+            </div><!-- /reviews__grid -->
+        </div>
+    </section>
+
+    <!-- ===== KONTAKT ===== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section__title">Kontakt</h2>
+            <p class="section__subtitle">Čekamo vas</p>
+            <div class="contact__grid">
+                <div class="contact__card">
+                    <i class="fas fa-map-pin contact__icon"></i>
+                    <h3>Adresa</h3>
+                    <p>Zelenika, Herceg-Novi<br>Crna Gora 🇲🇪</p>
+                </div>
+                <div class="contact__card">
+                    <i class="fas fa-phone-alt contact__icon"></i>
+                    <h3>Telefon / Dostava</h3>
+                    <a href="tel:+38267152660" class="contact__link">+382 67 152 660</a>
+                    <div class="contact__delivery-row">
+                        <span class="contact__delivery-label"><i class="fas fa-motorcycle"></i> Online:</span>
+                        <a href="https://glovoapp.com/me/sr/herceg-novi/magla-hno"
+                           target="_blank" rel="noopener noreferrer" class="contact__link contact__glovo">
+                            Glovo <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact__card">
+                    <i class="far fa-clock contact__icon"></i>
+                    <h3>Radno vrijeme</h3>
+                    <p>Svaki dan: 12:00 — 24:00<br>Kuhinja: 12:00 — 23:00</p>
+                </div>
+                <div class="contact__card">
+                    <i class="fas fa-share-alt contact__icon"></i>
+                    <h3>Društvene mreže</h3>
+                    <a href="https://www.instagram.com/magla.mne/" target="_blank" rel="noopener noreferrer" class="contact__link">
+                        <i class="fab fa-instagram"></i> @magla.mne
+                    </a>
+                    <a href="https://www.instagram.com/p/DZ8PAzfMt8L/" target="_blank" rel="noopener noreferrer" class="contact__link contact__ukusno">
+                        <i class="fab fa-instagram"></i> UKUSNO.MNE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAPA ===== -->
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.5!2d18.577!3d42.453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c3b0052ed09f9%3A0x4c6150318e19eb31!2sMAGLA!5e0!3m2!1ssr!2s!4v1"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="MAGLA Restaurant Location">
+        </iframe>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__brand">
+                <img src="./assets/Logo2-VUF0zU2B.png" alt="MAGLA" class="footer__logo-img">
+                <span class="footer__tagline">Restaurant & Hookah</span>
+            </p>
+            <p class="footer__copy">&copy; <span id="year"></span> MAGLA. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
